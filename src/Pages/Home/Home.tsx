@@ -27,6 +27,11 @@ export const Home = () => {
               </div>
            </div>
 
+           <div className="button flex flex-row">
+            <button className="px-6 py-4 mx-2 font-bold bg-blue-500 text-white gap-2 rounded-full">Book Appoinment</button>
+            <button className="px-6 py-4 mx-2 font-bold bg-white text-black shadow-blue-500 rounded-full  gap-2"> watch our story</button>
+           </div>
+
       </div>
 
       <div className="img flex-1 flex justify-center md:justify-end">
