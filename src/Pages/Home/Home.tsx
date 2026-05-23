@@ -1,3 +1,4 @@
+import { Phone } from "lucide-react";
 import clinic from "../../images/stap.webp";
 export const Home = () => {
   return (
@@ -6,38 +7,73 @@ export const Home = () => {
      bg-yellow-50 w-fullmax-w-5xl mx-auto p-8 md:p-12 rounded-2xl shadow-sm border border-blue-100"
     >
       <div className="title flex-1 space-y-4 text-center md:text-left mb-4 md:mb-4">
-        <h2 className=" text-4xl py-4  font-extrabold  text-black">Excellence in <br />
-         <span className="text-blue-600 underline">Healthcare</span> With <br /> Compassionate Care</h2>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+        <h2 className=" text-4xl py-4  font-extrabold  text-black">
+          Excellence in <br />
+          <span className="text-blue-600 underline">Healthcare</span> With{" "}
+          <br /> Compassionate Care
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
           Sed do eiusmod tempor incididunt ut labore et dolore magna <br />
-           aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+        </p>
 
-           <div className="highLight flex flex-row">
-              <div className=" flex flex-col mx-3 px-2">
-                 <p className="text-2xl font-extrabold text-blue-500">15+</p>
-                 <p className="text-gray-300 font-medium">Years Experience</p>
-              </div>
-              <div className=" flex flex-col mx-3 px-2">
-                 <p className="text-2xl font-extrabold text-blue-500">5000+</p>
-                 <p className="text-gray-300 font-medium">Patients Treat</p>
-              </div>
-              <div className=" flex flex-col mx-3 px-2">
-                 <p className="text-2xl font-extrabold text-blue-500">50+</p>
-                 <p className="text-gray-300 font-medium">Medical expart</p>
-              </div>
-           </div>
+        <div className="highLight flex flex-row">
+          <div className=" flex flex-col mx-3 px-2">
+            <p className="text-2xl font-extrabold text-blue-500">15+</p>
+            <p className="text-gray-300 font-medium">Years Experience</p>
+          </div>
+          <div className=" flex flex-col mx-3 px-2">
+            <p className="text-2xl font-extrabold text-blue-500">5000+</p>
+            <p className="text-gray-300 font-medium">Patients Treat</p>
+          </div>
+          <div className=" flex flex-col mx-3 px-2">
+            <p className="text-2xl font-extrabold text-blue-500">50+</p>
+            <p className="text-gray-300 font-medium">Medical expart</p>
+          </div>
+        </div>
 
-           <div className="button flex flex-row">
-            <button className="px-6 py-4 mx-2 font-bold bg-blue-500 text-white gap-2 rounded-full">Book Appoinment</button>
-            <button className="px-6 py-4 mx-2 font-bold bg-white text-black shadow-blue-500 rounded-full  gap-2"> watch our story</button>
-           </div>
+        <div className="button flex flex-row">
+          <button className="px-6 py-4 mx-2 font-bold bg-blue-500 text-white gap-2 rounded-full">
+            Book Appoinment
+          </button>
+          <button className="px-6 py-4 mx-2 font-bold bg-white text-black shadow-blue-500 rounded-full  gap-2">
+            {" "}
+            watch our story
+          </button>
+        </div>
 
+        {/* Emergency Hotline Card (The Last Element) */}
+        <div className="pt-4 flex justify-center md:justify-start">
+          <div
+            className="flex justify-start gap-4 w-full max-w-sm bg-white
+          brder border-slate-100/80 rounded-2xl p-4"
+          >
+            <div className=" flex items-center justify-center w-12 h-12 bg-[#1e6091] text-white rounded-full shrink-0">
+              <Phone className="w-5 h-5 fill-current" />
+            </div>
+            {/* Text details */}
+            <div className="flex flex-col text-left">
+              <span className="text-[10px] font-bold text-slate-400 tracking-wide uppercase">
+                Emergency Call
+              </span>
+              <a
+                href="tel:+15559112468"
+                className="text-lg font-bold text-[#0f2a4a] hover:text-[#1e6091] transition-colors duration-200"
+              >
+                +15559112468
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="img flex-1 flex justify-center md:justify-end">
-        <img src={clinic}
-         alt="Clinic Image" 
-         className="w-full rounded-md shadow-md"/>
+        <img
+          src={clinic}
+          alt="Clinic Image"
+          className="w-full rounded-md shadow-md"
+        />
       </div>
     </div>
   );
