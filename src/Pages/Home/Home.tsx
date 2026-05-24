@@ -44,7 +44,7 @@ export const Home = () => {
         </div>
 
         {/* Emergency Hotline Card (The Last Element) */}
-        <div className="pt-4 flex justify-center md:justify-start">
+        <div className="w-full max-w-xl bg-white border border-slate-200/60 rounded-2xl p-3 shadow-[0_4px_25px_-5px_rgba(0,0,0,0.04)]">
           <div
             className="flex justify-start gap-4 w-full max-w-sm bg-white
           brder border-slate-100/80 rounded-2xl p-4"
